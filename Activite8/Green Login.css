@@ -1,0 +1,147 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.img {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(123, 228, 149, 0.2745098039);
+}
+.img > img:first-child {
+  width: 40%;
+  height: 60%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  -webkit-transform: translate(20%, 25%);
+          transform: translate(20%, 25%);
+}
+.img > img:last-child {
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  top: 5%;
+  left: -12%;
+  -webkit-transform: rotate(45deg) scale(1.2);
+          transform: rotate(45deg) scale(1.2);
+}
+.img .login {
+  width: 30%;
+  height: 70%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.img .login > img {
+  width: 25%;
+  border-radius: 50%;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+.img .login h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  margin-top: 5%;
+}
+.img .login form {
+  margin-top: 2%;
+  width: 100%;
+  height: 60%;
+}
+.img .login form span {
+  color: gray;
+  font-size: 12px;
+  margin-left: 10%;
+  visibility: hidden;
+}
+.img .login form > div {
+  width: 100%;
+  height: 18%;
+  margin-bottom: 5%;
+  position: relative;
+}
+.img .login form > div > img {
+  position: absolute;
+  width: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.img .login form > div > input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px #56c595 solid;
+  padding-left: 10%;
+  font-size: 20px;
+  font-weight: bold;
+}
+.img .login form > input {
+  width: 100%;
+  height: 18%;
+  background-color: #56c595;
+  border-radius: 20px;
+  border: none;
+  margin-top: 5%;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  font-size: 15px;
+  width: 60%;
+  margin-left: 20%;
+}
+.img .login form a {
+  float: right;
+  color: gray;
+  text-transform: capitalize;
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .img > img {
+    visibility: hidden;
+  }
+  .img .login {
+    width: 60%;
+  }
+  .img .login h1 {
+    font-size: 20px;
+  }
+  .img .login form > div > input {
+    font-size: 15px;
+    padding-left: 15%;
+  }
+  .img .login form > div > input::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .img .login form > div > input::-moz-placeholder {
+    font-size: 12px;
+  }
+  .img .login form > div > input:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .img .login form > div > input::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .img .login form > div > input::placeholder {
+    font-size: 12px;
+  }
+}
